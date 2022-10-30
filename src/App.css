@@ -1,0 +1,91 @@
+body{
+   display: flex;
+   justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+   align-items: center;
+   font-family: Arial, Helvetica, sans-serif;
+   perspective: 800px;
+   background-image: url(./img/clouds-5481190_960_720.jpg);
+   background-size: cover;
+}
+.loader {
+  text-align: center;
+  background: linear-gradient(to right, rgba(137, 188, 202, 0.995), rgba(228, 110, 81, 0.67));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190vh;
+  height: 100vh;
+  z-index: 200;
+ }
+ 
+
+.App{
+  
+    background: linear-gradient(to right, rgb(137, 188, 202), rgba(255, 122, 89,0));;
+    opacity: none;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    border: 1px solid black;
+    margin-top: 5rem;
+    border-radius: 20px;
+    box-shadow: -10px -2px 0px rgb(34, 33, 33);
+    transition: 0.5s;
+    transform: rotate3d(0, -1, 0, 20deg);
+}
+
+.App:hover{
+    transform: rotate3d(0, 0, 0, 40deg);
+    box-shadow: none;
+    background: none;
+    background: linear-gradient(to right, rgb(137, 188, 202), rgba(245, 243, 243, 0));;
+}
+.item1{
+   grid-column: 1/span 3;
+   text-align: center;
+   
+}
+.item2{
+    grid-column: 1/3;
+    text-align: center;
+}
+.item3{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.img{
+    width: 150px;
+}
+
+.item4{
+    grid-column: 2/3;
+    padding-top:2rem;
+    text-align: left;
+}
+.item5{
+    grid-column: 1/3;
+    
+}
+.button{
+width: 30%;
+  margin-left: 35%;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  border: 1px solid black;
+  background:none;
+  box-shadow: -4px 2px 0px rgb(88, 86, 86);
+  transform: translateY(-4px);
+  transition: .4s;
+  cursor: pointer;
+}
+
+.button:active{
+    box-shadow: none;
+    transform: translateY(4px);
+    border: none;
+}
+
