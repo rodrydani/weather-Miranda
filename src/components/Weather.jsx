@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import CircleLoader from "react-spinners/circleLoader";
+import CircleLoader from "react-spinners/CircleLoader";
 
 const Weather = () => {
 const [weather,setweather]=useState({});
