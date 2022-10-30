@@ -2,6 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import CircleLoader from "react-spinners/CircleLoader";
+import VideoBack from "../img/video.mp4";
+import ImgBack from "../img/clouds-5481190_960_720.jpg";
+
 
 const Weather = () => {
 const [weather,setweather]=useState({});
@@ -33,7 +36,7 @@ console.log(fa);
 
 
     return (
-      <>
+      <> 
        {
               loading ?
               <div className="loader">
@@ -49,7 +52,10 @@ console.log(fa);
           
 
               :
-
+              <div>
+              <video autoPlay loop muted>
+                <source src={VideoBack} type="video/mp4" />
+              </video>
               <div className="App">
               <h1 className='tittle item1'>Weather App</h1>
               <h2 className='item2'> {weather.name}{" "}{weather.sys?.country}</h2>
@@ -67,9 +73,9 @@ console.log(fa);
 
              
             </div>
-
+           </div>
           }
-    
+         
         </>
     );
 };

@@ -2,22 +2,36 @@ body{
    display: flex;
    justify-content: center;
     text-align: center;
-    margin: 0 auto;
    align-items: center;
    font-family: Arial, Helvetica, sans-serif;
    perspective: 800px;
-   background-image: url(./img/clouds-5481190_960_720.jpg);
+  margin: 0 auto;
+  background-image: url(./img/clouds-5481190_960_720.jpg);
    background-size: cover;
+   overflow-y: hidden;
+   overflow-x: hidden;
+}
+video{
+   
+   position:absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   height:150%;
+   width: 100%;
+   object-fit: cover;
+    
 }
 .loader {
-  text-align: center;
-  background: linear-gradient(to right, rgba(137, 188, 202, 0.995), rgba(228, 110, 81, 0.67));
-  display: flex;
+    display: flex;
   justify-content: center;
+  text-align: center;
+  background-image: url(./img/clouds-5481190_960_720.jpg);
+  background: linear-gradient(to right, rgb(115, 203, 228), rgba(228, 110, 81, 0.67));
   align-items: center;
   width: 190vh;
   height: 100vh;
-  z-index: 200;
+  
  }
  
 
