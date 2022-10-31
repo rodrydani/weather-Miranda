@@ -28,9 +28,9 @@ setTimeout(()=>{
 },[])
 
 console.log(weather);
-const Cel=weather.main?.temp+" "+"°C"
+const Cel=Math.trunc(weather.main?.temp)+" "+"°C"
 console.log(Cel);
-const fa=((weather.main?.temp*9/5)+32)+" "+"°F"
+const fa=Math.trunc((weather.main?.temp*9/5)+32)+" "+"°F"
 console.log(fa);
 
 
@@ -67,6 +67,7 @@ console.log(fa);
               <p  className='items '><i class="fa-solid fa-wind"></i>{" "}<b>Wind Speed:{" "}</b>{weather.wind?.speed}{" "} m/s</p>
              <p  className='items 5'><i class="fa-solid fa-cloud"></i>{" "}<b>Clouds:{" "}</b>{weather.clouds?.all}{" "} %</p>
              <p  className='items '><i class="fa-solid fa-temperature-three-quarters"></i>{" "}<b>pressure:{" "}</b>{weather.main?.pressure}{" "} mb</p>
+             <p  className='items '><i class="fa-solid fa-droplet"></i>{" "}<b>humidity:{" "}</b>{weather.main?.humidity}{" "} %</p>
               </div>
              <button  className='button item5' onClick={()=>setDegrees(!degrees)}>Degrees °F/°C</button>
 

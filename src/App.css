@@ -31,7 +31,7 @@ video{
   align-items: center;
   width: 190vh;
   height: 100vh;
-  
+  z-index: 100;
  }
  
 
@@ -48,6 +48,7 @@ video{
     box-shadow: -10px -2px 20px  rgb(34, 33, 33);
     transition: 0.5s;
     transform: rotate3d(0, -1, 0, 20deg);
+    z-index: 0;
 }
 
 .App:hover{
@@ -55,6 +56,7 @@ video{
     box-shadow: none;
     background: none;
     background: linear-gradient(to right, rgb(137, 188, 202), rgba(245, 243, 243, 0));;
+    
 }
 .item1{
    grid-column: 1/span 3;
@@ -103,3 +105,6 @@ width: 30%;
     border: none;
 }
 
+.temp{
+    color: blue;
+}
